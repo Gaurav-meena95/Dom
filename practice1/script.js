@@ -1,13 +1,29 @@
-let heading = document.getElementById("head1");
-console.log(heading);
-let head = (document.getElementsByClassName("head")[0].style.color = "red");
-console.log(head);
-const newWay1 = document.querySelectorAll(".head")[0].style.color = "deepskyblue";
+const headto = document.querySelectorAll(".tag");
+let color = ["orange", "blue", "red", "orange", "pink", "green"];
+for (let i = 0; i < headto.length; i++) {
+  headto[i].style.backgroundColor = color[i];
+}
 
-const new1 = document.querySelectorAll(".bg")
-new1[0].style.backgroundColor = "green";
-new1[1].style.backgroundColor = "blue";
-new1[2].style.backgroundColor = "red";
-new1[3].style.backgroundColor = "orange";
-new1[4].style.backgroundColor = "pink";
-console.log(new1)
+// Array.from(headto).map((ele)=>{
+
+// })
+// let p = document.querySelector(".frist");
+// console.log(p);
+// p.addEventListener('click',()=>{
+//   p.classList.toggle('second')
+// })
+
+let change = false;
+let btn = document.querySelector(".btn_2");
+btn.addEventListener("click", () => {
+  change = !change;
+
+
+  if (change) {
+    btn.innerText = "Remove from Friend"
+    btn.style.backgroundColor = "red";
+  } else {
+    btn.innerText = "Add Friend"
+    btn.style.backgroundColor = "green";
+  }
+});
