@@ -1,0 +1,29 @@
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo{
+  margin: 10vh;
+  gap: 2vh;
+  background-color: beige;
+  padding: 4vh;
+}
+#btn{
+  background-color: rgb(15, 230, 15);
+  border: none;
+  padding: 1vw;
+}
+.remove{
+  background-color: red;
+}
+#inputText{
+  width: 100%;
+}
+.task{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw  ;
+}
